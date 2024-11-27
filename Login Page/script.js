@@ -1,11 +1,8 @@
 const counterDiv = document.querySelector('.js-counter');
-const counterValue = counterDiv.innerHTML;
+counterDiv.innerHTML = 30;
 
-
-function counterDown(counterValue){
-
-    let counter = parseInt(counterValue);
-
+function counterDown(){
+    let counter = 30;
     for (let i = 1; i <= counter; i++) {
 
         setTimeout(() => {
@@ -16,4 +13,4 @@ function counterDown(counterValue){
     }
 }
 
-counterDown (counterValue);
+counterDown();
